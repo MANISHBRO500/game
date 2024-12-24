@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+#wheel {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #444;
+  margin: 20px auto;
+  background: conic-gradient(
+    #ff7f7f 0% 25%, 
+    #7fff7f 25% 50%, 
+    #7f7fff 50% 75%, 
+    #ffff7f 75% 100%
+  );
+}
+
+.vote-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.vote-btn:hover {
+  background-color: #0056b3;
+}
+
+.result-display {
+  display: none;
+}
+
+#wheel.spin {
+  animation: spin 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1440deg);
+  }
+}

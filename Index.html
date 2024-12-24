@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin Wheel Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Spin Wheel Game</h1>
+    <div class="input-section">
+      <h3>Add Questions</h3>
+      <input type="text" id="questionInput" placeholder="Enter a question">
+      <button id="addQuestion">Add Question</button>
+      <ul id="questionList"></ul>
+    </div>
+    <div class="spin-wheel-section">
+      <div class="wheel-container">
+        <div class="wheel" id="wheel"></div>
+        <button id="spinButton">Spin the Wheel</button>
+      </div>
+    </div>
+    <div class="question-display" id="questionDisplay">
+      <p id="selectedQuestion">Your question will appear here</p>
+      <button class="vote-btn" id="yesButton">Yes</button>
+      <button class="vote-btn" id="noButton">No</button>
+    </div>
+    <div class="result-display" id="resultDisplay">
+      <h3>Game Results</h3>
+      <p>Total Questions Asked: <span id="totalQuestions">0</span></p>
+      <p>Total Votes: <span id="totalVotes">0</span></p>
+      <p>Yes: <span id="yesVotes">0</span> (<span id="yesPercentage">0%</span>)</p>
+      <p>No: <span id="noVotes">0</span> (<span id="noPercentage">0%</span>)</p>
+      <button id="resetButton">Reset Game</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
